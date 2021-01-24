@@ -98,3 +98,15 @@ p {
    visibility: hidden;
    transition: 0.5s ease;
 }
+.input {
+   max-width: 35px;
+   border-radius: 5px;
+   border: 1px solid #072A43;
+   text-align: center;
+   display: inline-block;
+   outline: none;
+}
+.iGuess {
+   text-align: center;
+   margin-bottom: 30px;
+}
