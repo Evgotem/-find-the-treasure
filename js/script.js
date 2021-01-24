@@ -33,8 +33,12 @@ for (let i = 0; i < blocksQuantity.length; i++) {
     counterValue--;
     counter.innerHTML = counterValue;
     if (blocksQuantity[i] == target) {
-       alert("Вы победили!");
-       location.reload();
+      target.classList.toggle('active');
+      setTimeout(youWin, 100);
+      function youWin  () {
+         alert("Вы победили!");
+         location.reload();
+      }
     } else if (blocksQuantity[i] != target) {
       blocksQuantity[i].classList.add('hiden');
     }

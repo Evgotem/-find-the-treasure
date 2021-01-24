@@ -30,6 +30,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position: center center;
 }
 .block:hover {
   background-color: #019D36;
@@ -79,6 +80,7 @@ p {
    border-radius: 10px;
    cursor: pointer;
    transition: all 0.5s ease;
+   
 }
 .hide-target:hover {
    background-color: #595959;
@@ -86,9 +88,11 @@ p {
 }
 .active {
    background: #fff;
+   background-image: url('../img/gold.png');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 90%;
    transition: 0.5s ease;
-   color: #072A43;
-   font-weight: bold;
 }
 .hiden {
    visibility: hidden;
