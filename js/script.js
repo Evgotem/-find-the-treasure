@@ -33,7 +33,7 @@ input.onchange = () => {
 // при ошибке счетчик уменьшается на 1, и перезагружает страницу при проигрыше
 for (let i = 0; i < blocksQuantity.length; i++) {
    function areYouWin  (x) {
-      target.classList.toggle('active');
+      target.classList.add('active');
       setTimeout(() => alert(x), 100);
       setTimeout(() => location.reload(), 1000);
    }
