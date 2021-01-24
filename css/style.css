@@ -63,3 +63,34 @@ p {
   }
   
 }
+
+.hide-target {
+   margin: 0 auto;
+   text-align: center;
+   padding: 10px;
+   background: #333;
+   color: #fff;
+   font-size: 16px;
+   font-weight: bold;
+   display: block;
+   margin-bottom: 30px;
+   outline: none;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+.hide-target:hover {
+   background-color: #595959;
+   transition: all 0.5s ease;
+}
+.active {
+   background: #fff;
+   transition: 0.5s ease;
+   color: #072A43;
+   font-weight: bold;
+}
+.hiden {
+   visibility: hidden;
+   transition: 0.5s ease;
+}
