@@ -33,18 +33,19 @@ input.onchange = () => {
 // при ошибке счетчик уменьшается на 1, и перезагружает страницу при проигрыше
 for (let i = 0; i < blocksQuantity.length; i++) {
    function areYouWin  (x) {
-      alert(x);
-      location.reload();
+      target.classList.toggle('active');
+      setTimeout(() => alert(x), 100);
+      setTimeout(() => location.reload(), 1000);
    }
   blocksQuantity[i].onclick = function () {
     counterValue--;
     counter.innerHTML = counterValue;
-    if (counterValue < 0 && blocksQuantity[i] != target) {
-      target.classList.toggle('active');
+    if (counterValue < 1 && blocksQuantity[i] != target) {
       areYouWin('Вы проиграли :(');
+  
     }  else if (blocksQuantity[i] == target) {
-      target.classList.toggle('active');
-      areYouWin('Вы победили!!');
+      areYouWin('Вы выиграли :)');
+  
     } else if (blocksQuantity[i] != target) {
       blocksQuantity[i].classList.add('hiden');
     }  
